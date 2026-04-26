@@ -30,7 +30,7 @@ export default function Register() {
     try {
       await register(form);
       toast.success("Registered successfully!");
-      navigate("/login"); 
+      navigate("/"); 
       // optional reset
       setForm({
         firstName: "",
