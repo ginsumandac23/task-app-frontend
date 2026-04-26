@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../api";
+import { useUser } from "../context/UserContext";
 import { toast } from "react-toastify";
 
 import TaskCard from "../components/TaskCard";
@@ -26,6 +27,7 @@ const [editPriority, setEditPriority] = useState("medium");
 const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 const [taskToDelete, setTaskToDelete] = useState(null);
 
+const { user } = useUser();
 
 const fetchTasks = async () => {
   try {
@@ -157,7 +159,7 @@ const confirmDeleteTask = async () => {
   return (
   <>
     <div className="container mt-5">
-      <h1 className="pb-3">Daily Momentum</h1>
+      <h1 className="pb-3">Hello, {user?.firstName || "User"}</h1>
 
       <div className="task-addForm pt-5">
         <p className="text-uppercase fs-6">New Task</p>
