@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 
 export default function Register() {
   const { register } = useUser();
+   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const [form, setForm] = useState({
