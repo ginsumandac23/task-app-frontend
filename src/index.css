@@ -1,0 +1,214 @@
+:root {
+  --primary-color: #6366F1;
+  --secondary-color: #0EA5E9;
+  --tertiary-color: #F43F5E;
+  --neutral-color: #64748B;
+  --header-text: #0B1C30;
+  --paragraph-text: #464554;
+}
+
+body {
+  background: #F8F9FF;
+}
+
+header {
+  background: #fff;
+}
+
+.head-nav {
+
+}
+.head-nav a {
+  color: var(--neutral-color);
+}
+
+.navbar-icons a {
+    color: #64748B !important;
+    font-size: 20px;
+}
+
+.navbar-icons .acc-profile-icon {
+  color: var(--primary-color) !important;
+}
+
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 25px;
+  border: 1px solid #F1F5F9;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-input::placeholder{
+  color: #94A3B8;
+}
+
+.add-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #4338ca;
+}
+
+.task-addForm p {
+  color: var(--header-text);
+  margin: 0 0 5px 5px;
+  font-weight: 500;
+}
+
+.auth-container {
+
+}
+
+.auth-container h1 {
+  color: var(--header-text);
+}
+
+.auth-container p {
+  color: var(--paragraph-text);
+  font-size: 16px;
+}
+
+
+.auth-form {
+  background: #fff;
+}
+
+.auth-form label {
+  font-weight: 500;
+  color: var(--header-text);
+  text-transform: uppercase;
+}
+
+.auth-form .form-control {
+  height: 60px;
+}
+
+.btn-style-default {
+  background: var(--primary-color);
+  color: #fff;
+  height: 57px;
+  font-size: 18px;
+}
+
+.btn-style-default:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.reg-divider {
+  color: var(--neutral-color);
+  margin-top: 40px;
+}
+
+.auth-footer-text p {
+  color: var(--header-text);
+  font-size: 16px;
+}
+.auth-footer-text a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.task-tabs {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.task-tabs a {
+  color: var(--paragraph-text);
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active-tab {
+    background: var(--primary-color);
+    color: #fff !important;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+
+.task-card {
+  background: #fff;
+}
+
+.task-card.bg-completed{
+  background: #edffee;
+}
+
+
+.taskTags {
+  padding-bottom: 10px;
+}
+
+.task-prio, .task-category {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.task-prio-low {
+  background: #22c55e;
+}
+
+
+.task-prio-medium {
+  background: #f59e0b;
+}
+
+
+.task-prio-high {
+  background: #ef4444;
+}
+
+.category-personal {
+  background: #7c3aed;
+}
+
+.category-planning {
+  background: #181189;
+}
+
+.category-work {
+  background: #2563eb;
+}
+
+.category-others {
+  background: #4b5563;
+}
+
+
+.modal-backdrop-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  background: white;
+  width: 400px;
+  border-radius: 10px;
+}
